@@ -1,0 +1,7 @@
+.idea/
+*.xlsx
+*.pkl
+*.pickle
+*.csv
+
+*/__pycache__
