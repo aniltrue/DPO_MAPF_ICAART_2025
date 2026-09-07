@@ -1,7 +1,7 @@
-# **A Multitier Consensus-Based Approach for Dynamic and Partially Observable Multiagent Path-Finding**
+# **A Multitier Approach for Dynamic and Partially Observable Multiagent Path-Finding**
 
 ## <div align="center">ICAART 2025</div>
-## <div align="center">Paper ID: 185 </div>
+## <div align="center">Paper ID: 185</div>
 
 ## <u>Table of Contents</u>:
 - [Overview](#overview)
