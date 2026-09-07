@@ -67,7 +67,7 @@ The MAPF (Multi-Agent Path Finding) Framework allows for the simulation and eval
   scenario_maker.py 
   ```
 
-<div align="center"> <img src="updated_framework.png" width="300"></div>
+<div align="center"> <img src="framework.png" width="300"></div>
 
 ###  <u>Usage of A Metaheuristic and Multitier Approach</u>:
 The ```SingleRun.py``` is a Python script, running a single simulation based on given arguments. For `Help`, you need to run:

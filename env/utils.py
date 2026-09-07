@@ -63,22 +63,22 @@ def move_dynamic_obstacles(map_data: np.ndarray, dynamic_obstacle_axis: int = 3,
             next_j = j
 
             if move == up:
-                if i == 0 or map_data[i - 1, j, 0] != 0:
+                if i == 0 or map_data[i - 1, j, 0] != 0 or map_data[i - 1, j, dynamic_obstacle_axis] != 0:
                     next_move = down
                 else:
                     next_i -= 1
             elif move == down:
-                if i == n - 1 or map_data[i + 1, j, 0] != 0:
+                if i == n - 1 or map_data[i + 1, j, 0] != 0 or map_data[i + 1, j, dynamic_obstacle_axis] != 0:
                     next_move = up
                 else:
                     next_i += 1
             elif move == right:
-                if j == n - 1 or map_data[i, j + 1, 0] != 0:
+                if j == n - 1 or map_data[i, j + 1, 0] != 0 or map_data[i, j + 1, dynamic_obstacle_axis] != 0:
                     next_move = left
                 else:
                     next_j += 1
             elif move == left:
-                if j == 0 or map_data[i, j - 1, 0] != 0:
+                if j == 0 or map_data[i, j - 1, 0] != 0 or map_data[i, j - 1, dynamic_obstacle_axis] != 0:
                     next_move = right
                 else:
                     next_j -= 1
