@@ -3,8 +3,7 @@
 """
 
 from .RepairingStrategy import AbstractRepairingStrategy
-from .ACOUninformedRepairingStrategy import ACOUninformedRepairingStrategy
-from .ACOInformedRepairingStrategy import ACOInformedRepairingStrategy
+from .ACOBasedRepairingStrategy import ACOBasedRepairingStrategy
 from .EmptyRepairing import EmptyRepairing
 from .OnlyWaitingRepairingStrategy import OnlyWaitingRepairingStrategy
 from .OnlyACORepairingStrategy import OnlyACORepairingStrategy

@@ -5,7 +5,7 @@ import env
 from agent.AgentFactory import AgentFactory
 from agent.conflict_resolution import RandomProtocol
 from agent.initial_path.LPStrategy import LPStrategy
-from agent.repairing import EmptyRepairing, ACOUninformedRepairingStrategy
+from agent.repairing import EmptyRepairing, ACOBasedRepairingStrategy
 from env.Environment import Environment
 import random
 import pandas as pd

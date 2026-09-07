@@ -5,7 +5,7 @@ from agent.AgentFactory import AgentFactory
 from agent.conflict_resolution import RandomProtocol, FairTokenProtocol, ProbabilityBasedProtocol
 from agent.initial_path import CBS
 from agent.initial_path.aco import set_numba_seed
-from agent.repairing import ACOInformedRepairingStrategy, EmptyRepairing
+from agent.repairing import ACOBasedRepairingStrategy, EmptyRepairing
 from env.Environment import Environment
 import random
 import pandas as pd
@@ -17,7 +17,7 @@ MAP_SEEDS = [4, 5]
 AGENT_SEEDS = [10]
 
 INITIAL_ALGS = [CBS]
-REPAIR_ALGS = [ACOInformedRepairingStrategy]
+REPAIR_ALGS = [ACOBasedRepairingStrategy]
 PROTOCOLS = [FairTokenProtocol]
 
 INITIAL_B = [2, 5, 10]

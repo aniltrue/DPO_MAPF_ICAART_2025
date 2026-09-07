@@ -9,7 +9,7 @@ from agent.AbstractAgent import AgentID, AbstractAgent
 from agent.initial_path.aco import optimize, get_heuristic_matrix
 
 
-class ACOUninformedRepairingStrategy(AbstractRepairingStrategy):
+class ACOBasedRepairingStrategy(AbstractRepairingStrategy):
     """
         This repairing approach employs *ACO* algorithm to resolve the conflicts.
     """
@@ -31,7 +31,7 @@ class ACOUninformedRepairingStrategy(AbstractRepairingStrategy):
 
     @property
     def name(self) -> str:
-        return "ACO-Based Uninformed Repairing Strategy"
+        return "ACO-Based Repairing Strategy"
 
     def repair(self, path: Path, agent: AbstractAgent, t: int, real_t: int, scenario: AbstractMap,
                other_paths: Optional[List[Path]]) -> Optional[Path]:

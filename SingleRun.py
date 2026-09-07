@@ -7,7 +7,7 @@ from agent.AgentFactory import AgentFactory
 from agent.conflict_resolution import RandomProtocol, FairTokenProtocol, ProbabilityBasedProtocol
 from agent.initial_path import SingleACO, EECBS, CBS, LPStrategy
 from agent.initial_path.aco import set_numba_seed
-from agent.repairing import ACOInformedRepairingStrategy, EmptyRepairing, ACOUninformedRepairingStrategy
+from agent.repairing import EmptyRepairing, ACOBasedRepairingStrategy
 from env.Environment import Environment
 from math_model import LPFactory
 import argparse
@@ -26,8 +26,7 @@ PROTOCOLS = {
 }
 
 REPAIRINGS = {
-    "informed": ACOInformedRepairingStrategy,
-    "uninformed": ACOUninformedRepairingStrategy,
+    "aco": ACOBasedRepairingStrategy,
     "no-repairing": EmptyRepairing
 }
 

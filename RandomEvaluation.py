@@ -5,7 +5,7 @@ import env
 from agent.AgentFactory import AgentFactory
 from agent.conflict_resolution import RandomProtocol, FairTokenProtocol, ProbabilityBasedProtocol
 from agent.initial_path import EECBS, CBS
-from agent.repairing import EmptyRepairing, ACOUninformedRepairingStrategy, ACOInformedRepairingStrategy
+from agent.repairing import EmptyRepairing, ACOBasedRepairingStrategy
 from env.Environment import Environment
 import random
 import pandas as pd
@@ -17,7 +17,7 @@ MAP_SEEDS = [1, 2, 3]
 AGENT_SEEDS = [1]
 
 INITIAL_ALGS = [CBS, EECBS]
-REPAIR_ALGS = [EmptyRepairing, ACOUninformedRepairingStrategy, ACOInformedRepairingStrategy]
+REPAIR_ALGS = [EmptyRepairing, ACOBasedRepairingStrategy]
 PROTOCOLS = [RandomProtocol, FairTokenProtocol, ProbabilityBasedProtocol]
 
 FILE_PATH = "results.xlsx"
