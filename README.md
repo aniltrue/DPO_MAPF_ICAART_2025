@@ -11,6 +11,7 @@
 - [Usage](#usage)
   - [Usage of MAPF Scenario Generator](#command-line)
   - [Usage of A Metaheuristic and Hybrid Approach](#web-based-user-interface)
+- [Citation](#citation)
 - [License](#license)
 
 ## Overview:
@@ -128,3 +129,22 @@ Argument Options:
   ```
 
   > **Note**: The analysis and experiment data for evaluation in the paper exist in *analysis - final.xlsx*
+
+## Citation
+If you use our code in your research, please cite our paper:
+
+```bibtex
+@conference{DogruICAART2025,
+    author={Doğru, Anıl and Deldari Alamdari, Amin and Balpınarlı, Duru and Aydoğan, Reyhan},
+    title={A Multitier Approach for Dynamic and Partially Observable Multiagent Path-Finding},
+    booktitle={Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART},
+    year={2025},
+    pages={562-573},
+    publisher={SciTePress},
+    doi={10.5220/0013159800003890},
+    isbn={978-989-758-737-5},
+    issn={2184-433X},
+}
+```
+
+[DogruICAART2026]: Doğru, A., Alamdari, A. D., Balpınarlı, D., & Aydoğan, R. (2025). A Multitier Approach for Dynamic and Partially Observable Multiagent Path-Finding. Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 3: ICAART, 562–573. [doi:10.5220/0013159800003890](doi:10.5220/0013159800003890)
